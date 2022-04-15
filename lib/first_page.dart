@@ -6,9 +6,19 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
-        title: Text('I am Rich'),
+        title: const Text('I am Rich',
+          textAlign: TextAlign.center,),
+        backgroundColor: Colors.blueGrey[900],
       ),
+      body:   Center(
+        child: Image(
+          image: NetworkImage(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'
+          ),
+        ),
+      )
 
     );
   }
